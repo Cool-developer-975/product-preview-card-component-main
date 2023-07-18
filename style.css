@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+body{
+    font-size: 14px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    width: 550px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.image-container{
+    height: 100%;
+    width: 50%;
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.text-container{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2em 1.8em;
+}
+
+
+#first-heading{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .3em;
+    margin-bottom: 15px;
+}
+
+#second-heading{
+    font-family:'Fraunces', serif;
+    margin-bottom: 18px;
+    word-spacing: .2em;
+}
+
+#paragraph{
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 18px;
+   
+}
+
+#pricing{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-family:'Fraunces', serif;
+    margin-bottom: 18px;
+}
+
+#old-price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    font-weight: 100;
+    color: hsla(228, 12%, 48%,0.8);
+    text-decoration: line-through;
+    vertical-align: .8em;
+}
+
+.fa-cart-shopping{
+    font-size: 1rem;
+    color: white;
+    margin-right: .5em;
+}
+#add-to-cart{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 1em 4.5em;
+    border: none;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+#add-to-cart:hover{
+
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center;
+    position: absolute;
+    bottom: 20px;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width : 600px) {
+    body{
+        display:block;
+    }
+    .container{
+        margin-top: 5px;
+        width: 90%;
+        min-height: 90vh;
+        flex-direction: column;
+
+    }
+    .text-container{
+        min-height: 60%;
+        height: fit-content;
+        padding: 1em 1.8em;
+    }
+    #first-heading{
+        margin-bottom: 5px;
+        word-spacing: 0.1em;
+    }
+    #second-heading{
+        margin-bottom: 10px;
+    }
+    #paragraph{
+        margin-bottom: 10px;
+    }
+    #pricing{
+        margin-bottom: 5px;
+    }
+    #add-to-cart{
+         padding: 1em 2em;
+    }
+    .attribution{
+        bottom: 5px;
+    }
+}
