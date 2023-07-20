@@ -61,14 +61,15 @@ body{
 
 #second-heading{
     font-family:'Fraunces', serif;
-    margin-bottom: 18px;
+    margin-bottom: .7em;
     word-spacing: .2em;
+    line-height: 1em;
 }
 
 #paragraph{
     color: hsl(228, 12%, 48%);
-    margin-bottom: 18px;
-   
+    margin-bottom: 1.3em;
+    line-height: 1.5;
 }
 
 #pricing{
@@ -104,7 +105,7 @@ body{
 
 #add-to-cart:hover{
 
-    background-color: hsl(212, 21%, 14%);
+    background-color: hsl(158, 66%, 17%);
     cursor: pointer;
 }
 .attribution { font-size: 11px; text-align: center;
@@ -122,12 +123,14 @@ body{
     }
     .container{
         margin-top: 0;
-        width: 550px;
-        height: 88vh;
+        width: 650px;
+        height: 90vh;
         flex-direction: column;
     }
     .image-container{
         background-image: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        background-position: center;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         border-top-right-radius: 10px;
@@ -135,29 +138,32 @@ body{
     .text-container{
         min-height: 60%;
         height: fit-content;
-        padding: 1em 1.8em;
+        padding: .7em 1.2em;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-bottom-left-radius: 10px;
     }
     #first-heading{
         margin-top: .5em;
-        margin-bottom: .7em;
+        margin-bottom: .5em;
         word-spacing: 0.1em;
     }
     #second-heading{
-        margin-bottom: .5em;
+        margin-bottom: .7em;
+        word-spacing: normal;
     }
     #paragraph{
-        margin-bottom: .7em;
+        margin-bottom: 1.2em;
+        word-spacing: normal;
     }
     #pricing{
+        /* font-size: 1rem; */
         margin-bottom: .2em;
     }
     #add-to-cart{
-        padding: 1em 4.9em;
+        padding-inline: 7em;
     }
     .attribution{
-        bottom: 15px;
+        bottom: 10px;
     }
 }
