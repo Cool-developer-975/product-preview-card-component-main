@@ -28,6 +28,13 @@ body{
     border-radius: 10px;
 }
 
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
 .image-container{
     height: 100%;
     width: 50%;
@@ -94,6 +101,7 @@ body{
     margin-right: .5em;
 }
 #add-to-cart{
+    display: block;
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
@@ -148,7 +156,7 @@ body{
     #first-heading{
         margin-top: .5em;
         margin-bottom: .5em;
-        word-spacing: 0.1em;
+        word-spacing: 0.2em;
     }
     #second-heading{
         margin-bottom: .7em;
@@ -200,12 +208,14 @@ body{
         word-spacing: normal;
     }
     #pricing{
-        margin-bottom: .2em;
+        font-size: 1.8rem;
+        margin-bottom: .4em;
     }
     .attribution{
         bottom: 10px;
     }
     #add-to-cart{
-        padding-inline: 6.5em;
+        margin: 0 auto;
+        padding-inline: 6em;
     }
 }
