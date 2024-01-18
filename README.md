@@ -28,12 +28,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://ameya-kawade.github.io/product-preview-card-component-main/](https://your-live-site-url.com)
-
-## Author
-
-- Frontend Mentor - [https://www.frontendmentor.io/profile/Ameya-kawade](https://www.frontendmentor.io/profile/yourusername)
 
 
 
